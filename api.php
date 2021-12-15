@@ -29,7 +29,7 @@ if($type == "jpg" || $type == "png" || $type == "gif" ||  $type == "ico" || $typ
 // echo "<title>" . $title . " (". $author . ")</title> <meta name='description' content='" . $self . "...'><meta name='og:image' content='" . $resurl . "'> <h1>". $title . " (". $author . ")</h1>" . $self ."<br><img style='max-width: 50%; max-height: 50%;' src='" . $resurl . "'>";
 
 $outJson = [
-  "url" => $url,
+  "url" => $resurl,
   "title" => $title,
   "author" => $author,
   "self" => $self,
