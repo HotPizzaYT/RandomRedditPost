@@ -18,6 +18,10 @@ $title = $decoded->data->children[$randh]->data->title;
 $author = $decoded->data->children[$randh]->data->author;
 $self = $decoded->data->children[$randh]->data->selftext;
 
+if($resurl === null){
+  $resurl = "null";
+}
+
 $isPost = isset($title);
 
 $type = substr($resurl, -3);
